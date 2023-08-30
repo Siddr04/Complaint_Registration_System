@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Start from "./pages/Start";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
+import SignUp from "./pages/SignUp";
 function App() {
   return (
   <div className="App">
@@ -15,6 +16,8 @@ function App() {
             <Route path="/" element={<Home />} exact />
             <Route path="/getStarted" element={<Start />} exact />
             <Route path="/aboutUs" element={<About />} exact />
+            <Route path="/signUp" element={<SignUp />} exact />
+
             <Route path="*" element={<PageNotFound />} />
           </Routes>
     </Router>
