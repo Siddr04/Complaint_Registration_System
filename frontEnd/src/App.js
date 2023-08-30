@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Start from "./pages/Start";
 import About from "./pages/About";
+import PageNotFound from "./pages/PageNotFound";
 function App() {
   return (
   <div className="App">
@@ -14,7 +15,7 @@ function App() {
             <Route path="/" element={<Home />} exact />
             <Route path="/getStarted" element={<Start />} exact />
             <Route path="/aboutUs" element={<About />} exact />
-            
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
     </Router>
     </div>
