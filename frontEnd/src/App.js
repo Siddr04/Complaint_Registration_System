@@ -7,6 +7,7 @@ import Start from "./pages/Start";
 import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
 import SignUp from "./pages/SignUp";
+import UserLogin from "./pages/UserLogin";
 function App() {
   return (
   <div className="App">
@@ -17,6 +18,8 @@ function App() {
             <Route path="/getStarted" element={<Start />} exact />
             <Route path="/aboutUs" element={<About />} exact />
             <Route path="/signUp" element={<SignUp />} exact />
+            <Route path="/userLogin" element={<UserLogin />} exact />
+
 
             <Route path="*" element={<PageNotFound />} />
           </Routes>

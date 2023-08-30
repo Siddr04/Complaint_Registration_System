@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.jpg";
 import { Link } from "react-router-dom";
+import "../App.css";
 const SignUp = () => {
   return (
     <>
@@ -49,7 +50,9 @@ const SignUp = () => {
             id="passwordConfirm"
             required
           />
+          <button class="btn">Sign Up</button>
         </div>
+        <p>Already a user ? <Link to="userLogin">Login</Link></p>
       </div>
     </>
   );
