@@ -19,11 +19,13 @@ const Start = () => {
     <div class="login_container">
         <div class="user">
             <img src={image3} alt="user login"/>
-            <a href="/userlogin" class="btn1">User Login</a>
+            <Link to="/userLogin" className="btn1">User Login</Link>    
+
         </div>
         <div class="user">
             <img src={image2} alt="admin login"/>
-            <a href="/adminlogin" class="btn1">Admin Login</a>
+            <Link to="/adminLogin" className="btn1">Admin Login</Link>    
+            
         </div>
     </div>
     </>

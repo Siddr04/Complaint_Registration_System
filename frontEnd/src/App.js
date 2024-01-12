@@ -8,6 +8,7 @@ import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
 import SignUp from "./pages/SignUp";
 import UserLogin from "./pages/UserLogin";
+import AdminLogin from "./pages/AdminLogin"
 function App() {
   return (
   <div className="App">
@@ -19,6 +20,7 @@ function App() {
             <Route path="/aboutUs" element={<About />} exact />
             <Route path="/signUp" element={<SignUp />} exact />
             <Route path="/userLogin" element={<UserLogin />} exact />
+            <Route path="/adminLogin" element={<AdminLogin />} exact />
 
 
             <Route path="*" element={<PageNotFound />} />
